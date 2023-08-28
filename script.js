@@ -63,7 +63,7 @@ const renderProfile = (userInfo)=>{
 const fetchDefaultUserInfo = async () =>{
 
     try{
-        const response = await fetch(`https://api.github.com/users/jaydeepbariya59`);
+        const response = await fetch(`https://api.github.com/users/jaydeepbariya`);
         const userInfo = await response.json();
         console.log(userInfo);
         renderProfile(userInfo);
